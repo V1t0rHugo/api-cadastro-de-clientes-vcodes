@@ -1,0 +1,10 @@
+version: '3'
+services:
+  api-teste:
+    build: .
+    container_name: "api-teste-vcodes"
+    command: sh -c "npm run start"
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/usr/app
